@@ -4,34 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Converse</title>
+    <style>
+      body {
+        border: solid 4px #000;
+        font-family: sans-serif;
+      }
+
+      .product-title {
+        background-color: #f7f7f7;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .price {
+        font-size: 26px;
+      }
+      .cargo-information {
+        color: #888;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .more-info:link,
+      .more-info:visited,
+      .more-info:active {
+        color: #000;
+      }
+
+      .more-info:hover {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .details {
+        text-transform: uppercase;
+      }
+
+      .info-list {
+        list-style: square;
+        line-height: 1.4;
+      }
+
+      .add-cart {
+        font-size: 20px;
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+      }
+
+      .add-cart:hover {
+        background-color: #fff;
+        color: #000;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <article>
-      <h2>Converse Chuck Taylor All Star Low Top</h2>
+      <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
 
       <img src="/images/converse.jpg" alt="converse" height="256px" />
 
-      <h3>$65.00</h3>
+      <h3 class="price">$65.00</h3>
 
-      <p>Free shipping</p>
+      <p class="cargo-information">Free shipping</p>
       <p>
         Ready to dress up or down, these classic canvas Chucks are an everyday
         wardrobe stable.
       </p>
 
-      <a href="https://www.converse.com.tr/" target="_blank"
+      <a class="more-info" href="https://www.converse.com.tr/" target="_blank"
         >More information &rarr;</a
       >
 
-      <h3>Product details</h3>
+      <h3 class="details">Product details</h3>
 
-      <ul>
+      <ul class="info-list">
         <li>Lightweight, durable canvas sneaker</li>
         <li>Lightly padded footbed for added comfort</li>
         <li>Iconic Chuck Taylor ankle patch</li>
       </ul>
 
-      <button>Add to card</button>
+      <button class="add-cart">Add to card</button>
     </article>
   </body>
 </html>
