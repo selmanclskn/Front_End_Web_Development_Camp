@@ -6,6 +6,7 @@
 body {
   color: #444444;
   font-family: sans-serif;
+  position: relative;
 
   border-top: 10px solid #1098ad;
 }
@@ -13,6 +14,7 @@ body {
 .container {
   width: 800px;
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .main-header {
@@ -174,4 +176,16 @@ nav a:link {
 
 nav a:link:last-child {
   margin-right: 0;
+}
+
+.like-button {
+  color: #1098ad;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid #1098ad;
+
+  position: absolute;
+  bottom: 12px;
+  right: 36px;
 }
