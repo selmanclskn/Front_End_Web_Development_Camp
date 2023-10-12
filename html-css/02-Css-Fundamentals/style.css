@@ -189,3 +189,38 @@ nav a:link:last-child {
   bottom: 12px;
   right: 36px;
 }
+
+.like-button:hover {
+  color: brown;
+}
+
+.first-word {
+  display: inline-block;
+  color: brown;
+}
+
+/* h2::first-letter {
+  font-size: 60px;
+} */
+
+/* p::first-line {
+  color: brown;
+} */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-weight: bold;
+  background-color: #ffe70e;
+  color: #444444;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: -12px;
+  right: 60px;
+}
