@@ -51,6 +51,7 @@
       .more-info:visited,
       .more-info:active {
         color: #000;
+        display: block;
       }
 
       .more-info:hover {
@@ -88,6 +89,77 @@
         border-top: 4px solid;
         cursor: pointer;
       }
+
+      h2 {
+        position: relative;
+      }
+
+      h2::after {
+        content: "SALE";
+        background-color: red;
+        color: #f7f7f7;
+        font-size: 12px;
+        letter-spacing: 4px;
+        padding: 6px 12px;
+
+        position: absolute;
+        top: -15px;
+        left: -36px;
+      }
+
+      .box-1 {
+        background-color: #000;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-2 {
+        background-color: blue;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-3 {
+        background-color: red;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-4 {
+        background-color: orange;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-5 {
+        background-color: green;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-6 {
+        background-color: brown;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -96,7 +168,7 @@
         <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
 
         <img
-          src="/images/converse.jpg"
+          src="/.images/converse.jpg"
           alt="converse"
           height="256px"
           class="post-img"
@@ -113,6 +185,13 @@
         <a class="more-info" href="https://www.converse.com.tr/" target="_blank"
           >More information &rarr;</a
         >
+
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
 
         <h3 class="details">Product details</h3>
 
