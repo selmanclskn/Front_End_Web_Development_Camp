@@ -8,7 +8,6 @@
       * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
       }
 
       body {
@@ -17,7 +16,7 @@
 
       .container {
         border: solid 4px #000;
-        width: 825px;
+        width: 850px;
         margin: 50px auto;
       }
 
@@ -29,29 +28,21 @@
       }
 
       .post-img {
-        float: left;
-        margin-right: 40px;
+        /* margin-bottom: 10px; */
       }
 
       .price {
         font-size: 26px;
-        float: left;
       }
-
       .cargo-information {
         color: #888;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: bold;
-        margin-bottom: 20px;
-        float: right;
-        margin-top: 8px;
       }
 
       .post-desc {
         margin-bottom: 15px;
-        clear: both;
-        margin-bottom: 10px;
       }
 
       .more-info:link,
@@ -69,7 +60,6 @@
       .details {
         text-transform: uppercase;
         font-size: 18px;
-        margin-top: 20px;
         margin-bottom: 15px;
       }
 
@@ -95,18 +85,6 @@
         color: #000;
         border-top: 4px solid;
         cursor: pointer;
-      }
-
-      .product-info {
-        width: 240px;
-        float: left;
-        margin-right: 40px;
-        margin-top: 20px;
-      }
-
-      .product-details {
-        width: 240px;
-        float: left;
       }
 
       h2 {
@@ -179,6 +157,34 @@
         margin-right: 12px;
         display: inline-block;
       }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .row-0 {
+      }
+
+      .row-1 {
+        flex: 1;
+        margin-top: 30px;
+        justify-content: space-between;
+      }
+
+      .row-2 {
+        flex: 1;
+        margin-right: 16px;
+        margin-top: 30px;
+      }
+
+      .price-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
@@ -186,44 +192,50 @@
       <article>
         <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
 
-        <img
-          src="/.images/converse.jpg"
-          alt="converse"
-          height="256px"
-          class="post-img"
-        />
-        <div class="product-info">
-          <h3 class="price">$65.00</h3>
+        <div class="row">
+          <img
+            src="/.images/converse.jpg"
+            alt="converse"
+            height="256px"
+            class="post-img"
+            class="row-0"
+          />
 
-          <p class="cargo-information">Free shipping</p>
-          <p class="post-desc">
-            Ready to dress up or down, these classic canvas Chucks are an
-            everyday wardrobe stable.
-          </p>
+          <div class="row-1">
+            <div class="price-box">
+              <h3 class="price">$65.00</h3>
 
-          <a
-            class="more-info"
-            href="https://www.converse.com.tr/"
-            target="_blank"
-            >More information &rarr;</a
-          >
+              <p class="cargo-information">Free shipping</p>
+            </div>
+            <p class="post-desc">
+              Ready to dress up or down, these classic canvas Chucks are an
+              everyday wardrobe stable.
+            </p>
 
-          <div class="box-1"></div>
-          <div class="box-2"></div>
-          <div class="box-3"></div>
-          <div class="box-4"></div>
-          <div class="box-5"></div>
-          <div class="box-6"></div>
-        </div>
+            <a
+              class="more-info"
+              href="https://www.converse.com.tr/"
+              target="_blank"
+              >More information &rarr;</a
+            >
 
-        <div class="product-details">
-          <h3 class="details">Product details</h3>
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+            <div class="box-5"></div>
+            <div class="box-6"></div>
+          </div>
 
-          <ul class="info-list">
-            <li>Lightweight, durable canvas sneaker</li>
-            <li>Lightly padded footbed for added comfort</li>
-            <li>Iconic Chuck Taylor ankle patch</li>
-          </ul>
+          <div class="row-2">
+            <h3 class="details">Product details</h3>
+
+            <ul class="info-list">
+              <li>Lightweight, durable canvas sneaker</li>
+              <li>Lightly padded footbed for added comfort</li>
+              <li>Iconic Chuck Taylor ankle patch</li>
+            </ul>
+          </div>
         </div>
 
         <button class="add-cart">Add to card</button>

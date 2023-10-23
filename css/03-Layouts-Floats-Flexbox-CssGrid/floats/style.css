@@ -188,7 +188,7 @@ nav a:link:last-child {
 
   position: absolute;
   bottom: 72px;
-  right: -200px;
+  right: 72px;
 }
 
 .like-button:hover {
