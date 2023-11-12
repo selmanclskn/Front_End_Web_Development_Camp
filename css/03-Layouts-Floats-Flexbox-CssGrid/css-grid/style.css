@@ -21,7 +21,7 @@ body {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -30,7 +30,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
@@ -276,7 +276,7 @@ footer {
 
 /* --FLEXBOX-- */
 
-/* .main-header {
+.main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -311,7 +311,7 @@ footer {
   margin-top: 4px;
 }
 
-.row {
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -326,3 +326,27 @@ article {
 aside {
   flex: 0 0 300px;
 } */
+
+/* --CSS GRID-- */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1 / -1;
+}

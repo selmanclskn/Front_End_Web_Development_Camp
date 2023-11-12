@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converse</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .container {
+        border: solid 4px #000;
+        width: 850px;
+        margin: 50px auto;
+      }
+
+      .product-title {
+        background-color: #f7f7f7;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 15px 0;
+      }
+
+      .post-img {
+        /* margin-bottom: 10px; */
+      }
+
+      .price {
+        font-size: 26px;
+      }
+      .cargo-information {
+        color: #888;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .post-desc {
+        margin-bottom: 15px;
+      }
+
+      .more-info:link,
+      .more-info:visited,
+      .more-info:active {
+        color: #000;
+        display: block;
+      }
+
+      .more-info:hover {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .details {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .info-list {
+        list-style: square;
+        line-height: 1.8;
+        margin-left: 20px;
+        margin-bottom: 15px;
+      }
+
+      .add-cart {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+      }
+
+      .add-cart:hover {
+        background-color: #fff;
+        color: #000;
+        border-top: 4px solid;
+        cursor: pointer;
+      }
+
+      h2 {
+        position: relative;
+      }
+
+      h2::after {
+        content: "SALE";
+        background-color: red;
+        color: #f7f7f7;
+        font-size: 12px;
+        letter-spacing: 4px;
+        padding: 6px 12px;
+
+        position: absolute;
+        top: -15px;
+        left: -36px;
+      }
+
+      .box-1 {
+        background-color: #000;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-2 {
+        background-color: blue;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-3 {
+        background-color: red;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-4 {
+        background-color: orange;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-5 {
+        background-color: green;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      .box-6 {
+        background-color: brown;
+        height: 24px;
+        width: 24px;
+        margin-top: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+
+      /* .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .row-0 {
+      }
+
+      .row-1 {
+        flex: 1;
+        margin-top: 30px;
+        justify-content: space-between;
+      }
+
+      .row-2 {
+        flex: 1;
+        margin-right: 16px;
+        margin-top: 30px;
+      }
+
+      .price-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      } */
+
+      .row {
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+      }
+
+      .price-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 20px;
+        margin-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <article>
+        <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
+
+        <div class="row">
+          <img
+            src="/.images/converse.jpg"
+            alt="converse"
+            height="256px"
+            class="post-img"
+            class="row-0"
+          />
+
+          <div class="row-1">
+            <div class="price-box">
+              <h3 class="price">$65.00</h3>
+
+              <p class="cargo-information">Free shipping</p>
+            </div>
+            <p class="post-desc">
+              Ready to dress up or down, these classic canvas Chucks are an
+              everyday wardrobe stable.
+            </p>
+
+            <a
+              class="more-info"
+              href="https://www.converse.com.tr/"
+              target="_blank"
+              >More information &rarr;</a
+            >
+
+            <div class="boxxes">
+              <div class="box-1"></div>
+              <div class="box-2"></div>
+              <div class="box-3"></div>
+              <div class="box-4"></div>
+              <div class="box-5"></div>
+              <div class="box-6"></div>
+            </div>
+          </div>
+
+          <div class="row-2">
+            <h3 class="details">Product details</h3>
+
+            <ul class="info-list">
+              <li>Lightweight, durable canvas sneaker</li>
+              <li>Lightly padded footbed for added comfort</li>
+              <li>Iconic Chuck Taylor ankle patch</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="add-cart">Add to card</button>
+      </article>
+    </div>
+  </body>
+</html>
