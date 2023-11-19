@@ -57,4 +57,22 @@ let isIsland = false;
 let language;
 
 if (isIsland === false) console.log(country + " bir ada ülkesi değildir.");
+
+
+let age = 27;
+age = 28;
+
+const birthYear = 1996;
+// birthYear = 1998; - const ile tanımlanan değerler sonradan değiştirilemez!
+// const job; - const ile null değer atanamaz!
+
+var job = "Game Developer";
+job = "Front-End Developer";
+
+lastName = "Çalışkan"; // Hatalı kullanım!
+console.log(lastName);
+
+// LECTURE: let, const, var
+const language = "Turkish";
+// language = "English"; - Değer const ile oluşturulduğu için sonradan değiştirilemez!
 */
