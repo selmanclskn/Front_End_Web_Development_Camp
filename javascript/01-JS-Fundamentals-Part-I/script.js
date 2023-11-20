@@ -75,4 +75,71 @@ console.log(lastName);
 // LECTURE: let, const, var
 const language = "Turkish";
 // language = "English"; - Değer const ile oluşturulduğu için sonradan değiştirilemez!
+
+
+// Math operators
+const year = 2077;
+const ageSelman = year - 1996;
+const ageAlan = year - 2013;
+console.log(ageSelman, ageAlan);
+
+console.log(ageSelman * 2, ageSelman / 10, 2 ** 3);
+// 2 ** 3 - 2üslü3 (2^3)
+
+const firstName = "Selman";
+const lastName = "Çalışkan";
+console.log(firstName + " " + lastName);
+
+// Assignment operators
+let x = 10 + 5; // x = 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1
+x--; // x = x - 1
+console.log(x);
+
+// Comparison operators
+console.log(ageSelman > ageAlan); // <, >, <=, >=
+console.log(ageSelman <= 18);
+
+const isFullAge = ageAlan >= 18;
+
+console.log(year - 1996 > year - 2013);
+
+// LECTURE: Operators
+let populationTurkey = 85000000;
+console.log(populationTurkey / 2);
+
+populationTurkey++;
+console.log(populationTurkey);
+
+let populationFindland = 6000000;
+console.log(populationTurkey > populationFindland);
+
+let averagePopulation = 33000000;
+console.log(populationTurkey < averagePopulation);
+
+console.log(
+  "Türkiye bir Asya ve Avrupa ülkesidir." +
+    " " +
+    populationTurkey +
+    " " +
+    "insan yaşar ve tamamı Türkçe konuşur."
+);
+
+
+const year = 2077;
+const ageSelman = year - 1996;
+const ageAlan = year - 2013;
+
+console.log(year - 1996 > year - 2013);
+
+console.log(25 - 10 - 5);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageSelman + ageAlan) / 2;
+console.log(ageSelman, ageAlan, averageAge);
 */
