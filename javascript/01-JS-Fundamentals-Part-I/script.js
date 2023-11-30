@@ -142,4 +142,92 @@ console.log(x, y);
 
 const averageAge = (ageSelman + ageAlan) / 2;
 console.log(ageSelman, ageAlan, averageAge);
+
+
+const firstName = "Selman";
+const job = "Developer";
+const birthYear = 1996;
+const year = 2077;
+
+const selman =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(selman);
+
+const selmanNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}`;
+console.log(selmanNew);
+
+console.log(`Just a regular string...`);
+
+console.log("String with \nmultiple \nlines");
+
+console.log(`String
+multiple
+lines`);
+
+// LECTURE: strings and template literals
+const country = "Türkiye";
+const continent = "Avrupa ve Asya";
+const population = "85 milyon";
+
+const countryInformation = `${country} ${population} nüfusa sahip bir ${continent} ülkesidir.`;
+console.log(countryInformation);
+
+
+const age = 15;
+
+if (age >= 18) {
+  console.log("Ehliyet için uygun.");
+} else {
+  const oldCheck = 18 - age;
+  console.log(`${oldCheck} yıl sonra Ehliyet için uygun olunacak`);
+}
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+
+// LECTURE: Taking Decisions: if / else Statements
+const populationTurkey = 85000000;
+const averagePopulation = 33000000;
+
+if (populationTurkey >= averagePopulation) {
+  console.log("Türkiye'nin nüfusu ortalama nüfustan fazladır");
+} else {
+  console.log("Türkiye'nin nüfusu ortalama nüfustan azdır");
+}
+
+
+// type conversion
+const inputYear = "1996";
+console.log(Number(inputYear) + 18);
+console.log(inputYear + 18);
+
+console.log(Number("Selman"));
+console.log(typeof NaN);
+
+console.log(String(27), 27);
+
+// type coercion
+console.log("I am " + 27 + " years old");
+console.log("27" - "10" - 7);
+console.log("27" + "10" + 7);
+console.log("27" * "2");
+console.log("27" / 3);
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n); // n = ? (10)
+
+// LECTURE: type conversion and coercion
+console.log("9" - "5"); // -> 4
+console.log("19" - "13" + "17"); // -> '617'
+console.log("19" - "13" + 17); // -> 23
+console.log("123" < 57); // -> false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // -> 1143
 */
