@@ -230,4 +230,47 @@ console.log("19" - "13" + "17"); // -> '617'
 console.log("19" - "13" + 17); // -> 23
 console.log("123" < 57); // -> false
 console.log(5 + 6 + "4" + 9 - 4 - 2); // -> 1143
+
+
+// 5 falsy values: 0, "", undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+console.log(Boolean("Selman"));
+
+const money = 1000;
+if (money) {
+  console.log("Don't spend it all :D");
+} else {
+  console.log("You should get a job!");
+}
+
+let height = 0; // there is a bug!
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
 */
+
+const age = 18;
+if (age === 18) console.log("You just became an adult (strict)");
+
+if (age == 18) console.log("You just became an adult (loose)");
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+
+if (favourite === 23) {
+  console.log("Cool!");
+} else {
+  console.log("Nahh!");
+}
+
+if (favourite !== 27) {
+  console.log("Alright!");
+}
