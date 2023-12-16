@@ -43,7 +43,7 @@ const turkey = describeCountry("Turkey", 85, "Ankara");
 console.log(turkey);
 const australia = describeCountry("Australia", 25, "Sydney");
 console.log(australia);
-*/
+
 
 // Function declaration
 function calcAge1(birthYear) {
@@ -60,3 +60,23 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1996);
 console.log(age2);
+
+// LECTURE: Function Declarations vs. Expressions
+function percentageOfWorld1(population) {
+  return (population / 7900000000) * 100;
+}
+
+const percantageofTurkey = percentageOfWorld1(85000000);
+console.log(percantageofTurkey);
+const percantageofAustralia = percentageOfWorld1(25000000);
+console.log(percantageofAustralia);
+const percantageofChina = percentageOfWorld1(1441000000);
+console.log(percantageofChina);
+
+const percentageOfWorld2 = function (population) {
+  return (population / 7900000000) * 100;
+};
+
+const percantageofGerman = percentageOfWorld2(83000000);
+console.log(percantageofGerman);
+*/
