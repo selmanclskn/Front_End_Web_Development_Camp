@@ -10,7 +10,7 @@ if (hasDriversLicense) console.log("I can drive :D");
 // const interface = "Audi";
 // const private = 534;
 // const if = 27;
-*/
+
 
 function logger() {
   console.log("My name is Selman!");
@@ -43,3 +43,20 @@ const turkey = describeCountry("Turkey", 85, "Ankara");
 console.log(turkey);
 const australia = describeCountry("Australia", 25, "Sydney");
 console.log(australia);
+*/
+
+// Function declaration
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1996);
+console.log(age1);
+
+// Function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(1996);
+console.log(age2);
