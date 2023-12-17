@@ -79,4 +79,27 @@ const percentageOfWorld2 = function (population) {
 
 const percantageofGerman = percentageOfWorld2(83000000);
 console.log(percantageofGerman);
+
+
+// Arrow function
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1996);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(yearsUntilRetirement(1996, "Selman"));
+
+// LECTURE: Arrow functions
+
+const percentageOfWorld3 = population => {
+  return (population / 7900000000) * 100;
+};
+
+const percantageofTurkey = percentageOfWorld3(85000000);
+console.log(percantageofTurkey);
 */
