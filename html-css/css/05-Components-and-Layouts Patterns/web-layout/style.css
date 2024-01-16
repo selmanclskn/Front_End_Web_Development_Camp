@@ -1,0 +1,91 @@
+/* 
+  colors : main: #8A2BE2 / #6e22b5 - secondry: #AB274F 
+           black: #1B1B1B - grays: #BEBFC5 / #dfdfe2
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #1b1b1b;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+
+nav,
+section,
+main,
+aside {
+  padding: 24px;
+}
+
+nav {
+  background-color: #1b1b1b;
+  color: whitesmoke;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+menu {
+  background-color: #8a2be2;
+  color: whitesmoke;
+  grid-column: 2 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6e22b5;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+button:last-child {
+  background-color: #ab274f;
+  margin-left: auto;
+}
+
+section {
+  background-color: #dfdfe2;
+  padding: 40px;
+
+  overflow-y: scroll;
+
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.email {
+  background-color: #bebfc5;
+  height: 96px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  background-color: #dfdfe2;
+}
